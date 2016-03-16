@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+    <input ng-model="$parent.search.idea" placeholder="Type in your brand name" type="text" id="search_brand" class="form-control search-bar" />
+  </div>
+  <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+    <button class="btn btn-success" analytics-event="Search" ng-click="searchIdea($parent.search.idea)">
+      <span class="hidden-xs">Search</span>
+      <span class="glyphicon glyphicon-search"></span>
+    </button>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <input type="checkbox" id="add-dba" ng-model="$parent.search.include_dba">
+    <label class="label-for-checkbox" for="add-dba">
+      Add DBAs
+    </label>
+  </div>
+</div>
+

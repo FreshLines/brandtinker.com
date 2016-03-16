@@ -1,0 +1,27 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site 'http://community.opscode.com/api/v1'
+
+cookbook "ubuntu"
+cookbook 'nodejs', '~> 2.4.0'
+
+# cookbook "chef-client"
+# 
+# cookbook "mysql"
+# cookbook "apache2"
+# cookbook "passenger_apache2"
+# cookbook "postfix"
+# cookbook "imagemagick"
+# cookbook "memcached"
+# cookbook "php"
+# cookbook 'chef-client'
+
+# cookbook 'apache2', '>= 1.0.0'
+
+# cookbook 'rvm',
+#   :git => 'https://github.com/fnichol/chef-rvm'
+
+# cookbook 'postgresql',
+#   :git => 'https://github.com/findsyou/cookbooks',
+#   :ref => 'postgresql-improvements'

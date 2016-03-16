@@ -1,0 +1,11 @@
+<div ng-if="domain_info">
+  <h4>Domain Searching</h4>
+  <ul ng-repeat="(domain, availability) in domain_info" class="animate" data-ng-animate="'animate'">
+    <li ng-class="set_domain_availability_color(availability)">
+      {{domain}} - {{availability}}
+      <span ng-if="is_available(availability)">
+        <span class="glyphicon glyphicon-search" aria-hidden='true'></span><a href="https://www.namecheap.com/domains/registration/results.aspx?domain={{domain}}" target="_blank">Buy Now!</a>
+      </span>
+    </li>
+  </ul>
+</div>

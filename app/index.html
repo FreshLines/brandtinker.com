@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Brand Tinker</title>
+    <meta name="description" content="BrandTinker.com - Checkout the domain and business name availibilty of your next brand!">
+    <meta name="keywords" content="brand name, branding, domain name, new brand, website, startup, new business, brand name ideas, business name" />
+    <meta name="viewport" content="width=device-width">
+    <meta property="og:title" content="Brand Tinker" />
+    <meta property="og:description" content="BrandTinker.com - Checkout the domain and business name availibilty of your next brand!" />
+    <meta property="og:image" content="/images/oglogo.png" />
+    <meta property="og:url" content="http://brandtinker.com" />
+    <link rel="shortcut icon" href="/icon/favicon.ico">
+    <link rel="icon" type="image/png" href="/icon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/icon/favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="/icon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/icon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/icon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon-180x180.png">
+    <link rel="mask-icon" href="/icon/safari-pinned-tab.svg" color="#f6921e">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/icon/mstile-144x144.png">
+    <meta name="theme-color" content="#652d90">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/animate.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="brandTinkerApp">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <div class="header">
+    </div>
+
+    <div class="container">
+    <div ui-view=""></div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <p><span class="glyphicon glyphicon-heart"></span> from the Fresh Lines team</p>
+      </div>
+    </div>
+    <script>
+      !function(F,r,s,h,L,N,S){F.GoogleAnalyticsObject=s;F[s]||(F[s]=function(){
+      (F[s].q=F[s].q||[]).push(arguments)});F[s].l=+new Date;N=r.createElement(h);
+      S=r.getElementsByTagName(h)[0];N.src=L;S.parentNode.insertBefore(N,S)}
+      (window,document,'ga','script','//www.google-analytics.com/analytics.js');
+      ga('create', 'UA-59290822-4');
+    </script>
+
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/SHA-1/sha1.js"></script>
+    <script src="bower_components/angulartics/src/angulartics.js"></script>
+    <script src="bower_components/angulartics-google-analytics/lib/angulartics-google-analytics.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/config.js"></script>
+        <script src="scripts/search/brand.controller.js"></script>
+        <script src="scripts/domain/domain.factory.js"></script>
+        <script src="scripts/domain/domain.controller.js"></script>
+        <script src="scripts/domain/domain.directive.js"></script>
+        <script src="scripts/trademark/trademark.factory.js"></script>
+        <script src="scripts/trademark/trademark.controller.js"></script>
+        <script src="scripts/trademark/trademark.directive.js"></script>
+        <script src="scripts/business/business.factory.js"></script>
+        <script src="scripts/business/business.controller.js"></script>
+        <script src="scripts/business/business.directive.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

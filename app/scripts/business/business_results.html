@@ -1,0 +1,8 @@
+<div ng-if="business_info">
+  <h4>Business Results</h4>
+  <ul ng-repeat="(number,business) in business_info.businesses" data-ng-animate="'animate'">
+    <li ng-class="set_business_name_availability_color(business.status)">
+      {{ business.name }} - {{ business.status }} ({{ business.type }})
+    </li>
+  </ul>
+</div>

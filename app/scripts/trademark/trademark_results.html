@@ -1,0 +1,11 @@
+<div ng-if="trademark_info">
+  <h4>Copyright Results</h4>
+  <div ng-if="trademark_info.count === 0" class="available">
+    {{ idea }} is available!
+  </div>
+  <ul ng-repeat="(number, copyright) in trademark_info.trademarks" data-ng-animate="'animate'">
+    <li>
+      {{ copyright.wordmark }} - {{ copyright.description }}
+    </li>
+  </ul>
+</div>

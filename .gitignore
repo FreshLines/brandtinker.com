@@ -4,6 +4,8 @@
 ### Vagrant ###
 .vagrant/
 
+config/config.development.json
+config/config.production.json
 
 ### Bower ###
 bower_components

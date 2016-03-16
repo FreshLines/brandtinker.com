@@ -1,0 +1,18 @@
+{
+    "default_lang": "en",
+    "debug": true,
+    "trademark": {
+      "url": "http://api.default.brandtinker.frshlns.com/trademark/"
+    },
+    "business": {
+      "url": "http://api.default.brandtinker.frshlns.com/business/"
+    },
+    "domain": {
+      "url": "https://domainsearch.p.mashape.com/index.php?name=",
+      "headers": {
+        "X-Mashape-Key": "add your key here",
+        "Accept":"application/json"
+      },
+      "api_key": "add your key here"
+    }
+}

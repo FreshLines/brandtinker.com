@@ -1,0 +1,22 @@
+<div class="main-search">
+  <div class="hide-when-searching" ng-hide="search.idea">
+    <img src="images/logo.png" class="img-responsive" alt="Brand Tinker">
+    <p class="lead center">
+      Develop your Brand Today!
+    </p>
+  </div>
+  <div class="search-box center-block" ng-include="'scripts/search/input.html'"></div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <brandtinker-business-results></brandtinker-business-results>
+  </div>
+  <div class="col-md-6">
+    <brandtinker-trademark-results></brandtinker-trademark-results>
+  </div>
+  <div class="col-md-6">
+    <brandtinker-domain-results></brandtinker-domain-results>
+  </div>
+</div>
+<div class="row marketing">
+</div>
