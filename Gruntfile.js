@@ -15,6 +15,7 @@ module.exports = function (grunt) {
   require('jit-grunt')(grunt, {
     useminPrepare: 'grunt-usemin',
     ngtemplates: 'grunt-angular-templates',
+    imagemin: 'grunt-contrib-imagemin',
     cdnify: 'grunt-google-cdn',
     ngconstant: 'grunt-ng-constant'
   });
@@ -61,6 +62,14 @@ module.exports = function (grunt) {
         },
         constants: {
           ENV: buildConfig('development')
+        }
+      },
+      staging: {
+        options: {
+          dest: '<%= yeoman.app %>/scripts/config.js'
+        },
+        constants: {
+          ENV: buildConfig('staging')
         }
       },
       production: {
@@ -365,7 +374,7 @@ module.exports = function (grunt) {
           usemin: 'scripts/scripts.js'
         },
         cwd: '<%= yeoman.app %>',
-        src: 'views/{,*/}*.html',
+        src: '*/{,*/}*.html',
         dest: '.tmp/templateCache.js'
       }
     },
@@ -402,6 +411,9 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             '.htaccess',
             '*.html',
+            'images/logo.png',
+            'icon/*',
+            'scripts/*/*.html',
             'images/{,*/}*.{webp}',
             'styles/fonts/{,*/}*.*'
           ]
@@ -480,9 +492,11 @@ module.exports = function (grunt) {
     'karma'
   ]);
 
+  var target = grunt.option('ENV') || 'development';
+  var env_vars = 'ngconstant:' + target;
   grunt.registerTask('build', [
     'clean:dist',
-    'ngconstant:production',
+    env_vars,
     'wiredep',
     'useminPrepare',
     'concurrent:dist',

@@ -6,6 +6,10 @@
 # server 'example.com', user: 'deploy', roles: %w{app db web}, my_property: :my_value
 # server 'example.com', user: 'deploy', roles: %w{app web}, other_property: :other_value
 # server 'db.example.com', user: 'deploy', roles: %w{db}
+application = 'brandtinker.com'
+set :application, application
+role :app , 'brandtinker.com'
+set :deploy_to, "/srv/www/#{fetch(:application)}"
 
 
 # role-based syntax

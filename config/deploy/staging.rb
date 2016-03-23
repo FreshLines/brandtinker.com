@@ -7,6 +7,10 @@
 # server 'example.com', user: 'deploy', roles: %w{app web}, other_property: :other_value
 # server 'db.example.com', user: 'deploy', roles: %w{db}
 
+application = 'staging.brandtinker.com'
+set :application, application
+server 'staging.brandtinker.com'
+set :deploy_to, "/srv/www/#{fetch(:application)}"
 
 
 # role-based syntax
@@ -21,7 +25,7 @@
 # role :web, %w{user1@primary.com user2@additional.com}, other_property: :other_value
 # role :db,  %w{deploy@example.com}
 
-
+role :app , 'staging.brandtinker.com'
 
 # Configuration
 # =============

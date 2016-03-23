@@ -3,7 +3,7 @@
 */.DS_Store
 ### Vagrant ###
 .vagrant/
-
+config/config.staging.json
 config/config.development.json
 config/config.production.json
 dist/
