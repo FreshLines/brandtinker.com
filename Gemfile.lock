@@ -10,7 +10,7 @@ GEM
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (2.9.2)
-    rake (10.4.2)
+    rake (13.0.1)
     sshkit (1.7.1)
       colorize (>= 0.7.0)
       net-scp (>= 1.1.2)
@@ -21,3 +21,7 @@ PLATFORMS
 
 DEPENDENCIES
   capistrano (~> 3.4)
+  rake (>= 12.3.3)
+
+BUNDLED WITH
+   1.10.5

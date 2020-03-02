@@ -29,9 +29,9 @@ set :branch, :master
 # set :pty, true
 
 # Default value for :linked_files is []
-set :linked_files, fetch(:linked_files, []).push('config/config.production.json', 'config/config.production.json')
-set :linked_files, fetch(:linked_files, []).push('config/config.development.json', 'config/config.development.json')
-set :linked_files, fetch(:linked_files, []).push('config/config.staging.json', 'config/config.development.json')
+# set :linked_files, fetch(:linked_files, []).push('config/config.production.json', 'config/config.production.json')
+# set :linked_files, fetch(:linked_files, []).push('config/config.development.json', 'config/config.development.json')
+# set :linked_files, fetch(:linked_files, []).push('config/config.staging.json', 'config/config.development.json')
 set :linked_dirs, %w{node_modules bower_components}
 # Default value for linked_dirs is []
 # set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system')
